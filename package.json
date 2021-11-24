@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/rahmaabdul/book-search-engine/issues"
   },
-  "homepage": "https://github.com/rahmaabdul/book-search-engine#readme"
+  "homepage": "https://github.com/rahmaabdul/book-search-engine#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.15.0",
+    "dotenv": "^10.0.0",
+    "mongoose": "^6.0.13"
+  }
 }

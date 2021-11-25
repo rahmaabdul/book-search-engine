@@ -1,13 +1,15 @@
 const express = require("express");
 const path = require("path");
 const db = require("./server/config/connection");
-const routes = require("./server/routes");
+const routes = require("./routes");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+require("dotenv").config();
 
 // if we're in production, serve client/build as static assets
 if (process.env.NODE_ENV === "production") {
